@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Playfair+Display&display=swap');
-
 body {
     font-family: 'M Plus 1p', 'serif';
     line-height: 1.6;
@@ -29,7 +28,10 @@ h1 {
     font-size: 40px;
     margin: 0;
 }
-
+nav a {
+    display: block;
+    text-align: center;
+}
 nav {
     background-color: #304e70;
     color: #fff;
@@ -38,15 +40,13 @@ nav {
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    display: grid;
-    justify-content: center;
-    text-align: center;
+    padding: 5px;
+    border: white;
 }
 
 nav li {
-    margin: 0 10px;
-    padding: 10px;
+    margin: 5px 5px;
+    padding: 5px;
 }
 
 nav a {
@@ -56,7 +56,7 @@ nav a {
     font-size: 18px;
 }
 
-main {
+.principal-card {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -64,8 +64,9 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: grid; /* Use CSS Grid */
     gap: 20px; /* Add some space between grid items */
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr 1fr; /* Single column layout */
     font-family: 'EB Garamond', serif;
+
 }
 
 .card {
@@ -89,10 +90,14 @@ h2 {
     font-size: 25px;
     margin-bottom: 20px;
     text-align: center;
-    background-color: #426c9c;
-    color: white;    
+    color: rgb(0, 0, 0);    
 }
-
+hr {
+    width: 100%;
+	border-color: var(--line-divider-color);
+	margin: 20px 0;
+	margin-top: 10px;
+}
 h3 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -123,4 +128,13 @@ footer {
 #lastModified {
     font-size: 15px;
     color: rgb(255, 230, 1);
+}
+
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
 }
