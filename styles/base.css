@@ -137,4 +137,10 @@ footer {
 	nav ul li {
 		flex: 1 1 100%;
 	}
+    .principal-card {
+        display: flex;
+    }
+    .principal-card .card {
+        flex: 1 1 100%;
+    }
 }
