@@ -55,6 +55,18 @@ nav a {
     font-weight: bold;
     font-size: 18px;
 }
+nav .active {
+    background-color: var(--background-color-4);
+}
+nav .active::after {
+	content: "|";
+	color: var(--font-color-01)
+}
+
+nav .active::before {
+	content: '|';
+	color: var(--font-color-01)
+}
 
 .principal-card {
     max-width: 800px;
@@ -144,6 +156,21 @@ footer {
 .img {
     width: 100%;
 }
+
+.iframe-container {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	padding: var(--gap);
+	max-width: var(--max-width);
+    border: 5px solid #426c9c;
+
+}
+
+iframe {
+	width: 100% !important;
+	border-radius: var(--radius);
+}
+
 @media (min-width: 640px) {
 	nav ul {
 		display: flex;
