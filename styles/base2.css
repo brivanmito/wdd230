@@ -1,24 +1,29 @@
 
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Playfair+Display&display=swap');
 * {
   box-sizing: border-box;
 }
 html, body {
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: 'M Plus 1p', 'serif';
 }  
 /* header */
 header {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   display: flex;
   justify-content: center;
   justify-items: center;
   width: 100%;
-  background-color: #112A46;
-  color: #D3D3D3;
+  background-color: #ffffff;
+  color: #304e70;
 }
 header img {
   padding: 10px;
   margin-right: 80px; 
+  width: 10rem;
 }
 h1 {
   align-self: center
@@ -26,7 +31,7 @@ h1 {
 
 /* navigation bar */
 nav {
-  background-color: #dda15e;
+  background-color: #304e70;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +42,7 @@ nav a {
   padding: 20px;
   font-family: 'Source Code Pro', monospace;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 /* Main  */
@@ -63,14 +68,14 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #112A46;
+  background-color: #304e70;
   margin: 0;
   height: 50px;
 }
 .card a:active ,
 .card a:link ,
 .card a:visited { 
-color: navy;
+color: rgb(0, 0, 207);
 }
 .card a:hover {
   color: purple;
@@ -80,7 +85,7 @@ color: navy;
   border: 2px solid lightgray;;
   border-radius: 2%;
   overflow: hidden;
-  color: #D3D3D3;
+  color: white;
 }
 h4 {
   text-align: center;
@@ -139,16 +144,27 @@ display: none;
 }
 
 nav a:hover {
-background-color: #D3D3D3;
+background-color: #e6e5e5;
 color: #333;
 font-weight: 700;
 }
-
+.active {
+  background-color: #e6e5e5;
+  color: #000000;
+}
+.active::before {
+  content: "|";
+}
+.active::after {
+  content: "|";
+}
 .open a {
-  background-color: #dda15e;
+  background-color: #304e70;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-
+#flag {
+  width: 2rem;
+}
